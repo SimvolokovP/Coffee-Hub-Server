@@ -1,13 +1,13 @@
-const webAppUrl = "https://simvolokovp.github.io/Tg-Shop-test/";
+const webAppUrl = "URL";
 
 module.exports.handleStartCommand = async (bot, msg) => {
   const chatId = msg.chat.id;
   const text = msg.text;
 
   if (text === "/start") {
-    await bot.sendMessage(chatId, "Go to shop!", {
+    await bot.sendMessage(chatId, "Grab your coffee now! ☕️", {
       reply_markup: {
-        inline_keyboard: [[{ text: "Shop", web_app: { url: webAppUrl } }]],
+        inline_keyboard: [[{ text: "Start", web_app: { url: webAppUrl } }]],
       },
     });
   }

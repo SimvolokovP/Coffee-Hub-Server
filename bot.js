@@ -4,7 +4,7 @@ const {
   handleCallbackQuery,
 } = require("./controllers/botController");
 
-const token = "7379688714:AAE6Nyui8U6OR-aNZPargZOiBrBJtCEaBcA";
+const token = "TOKEN";
 const bot = new TelegramBot(token, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
